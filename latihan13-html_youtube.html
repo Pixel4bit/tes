@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .div1 {
+            border: 1px solid gainsboro;
+            float: left;
+            padding: 5px;
+            margin-top: 30px;
+            margin-right: 15px;
+            margin-left: 2.5%;
+            text-align: center;
+            width: 450px;
+            height: 425px;
+        }
+
+        .div-video-deskripsi {
+            text-align: left;
+            margin-top: 0px;
+            margin-bottom: 35px;
+        }
+
+        .teks-judul-video {
+            margin: 8px;
+        }
+
+        .teks-judul-halaman {
+            margin: 0px;
+            margin-bottom: 10px;
+            padding: 0px;
+            padding-bottom: 10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-bottom: 1px solid gainsboro;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .teks-judul-halaman-1 {
+            font-size: 15px;
+            margin: 0px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        .div-video {
+            margin-bottom: 12px;
+        }
+
+        .a1 {
+            border-radius: 5px;
+            background-color: green;
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin-top: 100px;
+        }
+
+        .a1:hover {
+            background-color: rgb(78, 161, 78);
+            color: white;
+        }
+
+        .a1:active {
+            background-color: black;
+            color: white;
+        }
+
+        .deskripsi-video-judul {
+            margin: 5px;
+            font-size: 20px;
+        }
+
+        .deskripsi-video {
+            margin: 5px;
+        }
+
+        .jam {
+            float: right;
+            padding-right: 10px;
+        }
+
+    </style>
+
+    <!-- JAVASCRIPT REALTIME CLOCK -->
+    <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('jam').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
+
+    <title>Latihan 13 HTML Youtube</title>
+</head>
+<body onload="startTime()">
+
+    <!-- JUDUL HALAMAN -->
+    <p class="teks-judul-halaman">Backup Video Pembelajaran</p>
+    <span class="teks-judul-halaman-1">SEMESTER 3 | WEB PROGRAMING II</span>
+    <span id="jam" class="jam"></span>
+    <hr>
+
+    <!-- VIDEO PERTAMA -->
+    <div class="div1">
+        <div class="div-video">
+            <iframe width="440" height="275" src="https://www.youtube.com/embed/dgueHJ1rE_4" frameborder="0"></iframe>
+        </div>
+        <div class="div-video-deskripsi">
+            <p class="deskripsi-video-judul">Video Pembelajaran Pertemuan 1</p>
+            <p class="deskripsi-video">22-03-2017 21:03:07</p>
+        </div>
+        <a class="a1" href="https://www.youtube.com/watch?v=dgueHJ1rE_4" target="_blank">Lihat Deskripsi</a>
+    </div>
+
+        <!-- VIDEO KEDUA -->
+    <div class="div1">
+        <div class="div-video">
+            <iframe width="440" height="275" src="https://www.youtube.com/embed/PRfSvdt5qU4" frameborder="0"></iframe>
+        </div>
+        <div class="div-video-deskripsi">
+            <p class="deskripsi-video-judul">Video Pembelajaran Pertemuan 2</p>
+            <p class="deskripsi-video">22-03-2017 21:03:07</p>
+        </div>
+        <a class="a1" href="https://www.youtube.com/watch?v=x6jqmZGSQBc" target="_blank">Lihat Deskripsi</a>
+    </div>
+
+    <!-- VIDEO KETIGA -->
+    <div class="div1">
+        <div class="div-video">
+            <iframe width="440" height="275" src="https://www.youtube.com/embed/ul1sKaQ_BqY" frameborder="0"></iframe>
+        </div>
+        <div class="div-video-deskripsi">
+            <p class="deskripsi-video-judul">Video Pembelajaran Pertemuan 3</p>
+            <p class="deskripsi-video">22-03-2017 21:03:07</p>
+        </div>
+        <a class="a1" href="https://www.youtube.com/watch?v=x6jqmZGSQBc" target="_blank">Lihat Deskripsi</a>
+    </div>
+
+    <!-- VIDEO KEEMPAT -->
+    <div class="div1">
+        <div class="div-video">
+            <iframe width="440" height="275" src="https://www.youtube.com/embed/ul1sKaQ_BqY" frameborder="0"></iframe>
+        </div>
+        <div class="div-video-deskripsi">
+            <p class="deskripsi-video-judul">Video Pembelajaran Pertemuan 4</p>
+            <p class="deskripsi-video">22-03-2017 21:03:07</p>
+        </div>
+        <a class="a1" href="https://www.youtube.com/watch?v=x6jqmZGSQBc" target="_blank">Lihat Deskripsi</a>
+    </div>
+
+    <!-- VIDEO KELIMA -->
+    <div class="div1">
+        <div class="div-video">
+            <iframe width="440" height="275" src="https://www.youtube.com/embed/ul1sKaQ_BqY" frameborder="0"></iframe>
+        </div>
+        <div class="div-video-deskripsi">
+            <p class="deskripsi-video-judul">Video Pembelajaran Pertemuan 5</p>
+            <p class="deskripsi-video">22-03-2017 21:03:07</p>
+        </div>
+        <a class="a1" href="https://www.youtube.com/watch?v=x6jqmZGSQBc" target="_blank">Lihat Deskripsi</a>
+    </div>
+
+    <!-- VIDEO KEENAM -->
+    <div class="div1">
+        <div class="div-video">
+            <iframe width="440" height="275" src="https://www.youtube.com/embed/ul1sKaQ_BqY" frameborder="0"></iframe>
+        </div>
+        <div class="div-video-deskripsi">
+            <p class="deskripsi-video-judul">Video Pembelajaran Pertemuan 6</p>
+            <p class="deskripsi-video">22-03-2017 21:03:07</p>
+        </div>
+        <a class="a1" href="https://www.youtube.com/watch?v=x6jqmZGSQBc" target="_blank" title="Horizon Zero Dawn Indonesia">Lihat Deskripsi</a>
+    </div>
+
+</body>
+</html>
